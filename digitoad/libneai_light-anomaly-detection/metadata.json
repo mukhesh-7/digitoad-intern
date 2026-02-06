@@ -1,0 +1,98 @@
+{
+    "algorithm_type": "on_board_training",
+    "commit": "bb711f54",
+    "compilation_date": "2025-06-18T10:36:20.009966",
+    "compilation_flags": {
+        "float_abi": "hard",
+        "fshort_enums": true,
+        "short_wchar": false
+    },
+    "compilation_str": "{'compilation_dict':{'request_type':'library','api':{'env':'PROD','version':'v3'},'version':{'web_api':{'env':'PROD','version':'v3'},'local_api':{'version':'2025.04.04.1','platform':'win64'},'studio':'5.0.2'},'compilation_flags':{'float_abi':'hard','short_wchar':false,'fshort_enums':true,'use_knowledge':false},'mcu':'cortex-m4_st_stm32l4_nucleo-l476rg','sensor':'multiGeneric','request_origin':'manual','algorithm_type':'on_board_training','lib_version':'v2_bb711f5','info':{'progression':{'evals_done':34176,'optimization_progress':0.17088,'elapsed_time':569,'cpu_info':{'cpu_nb_cores':12,'cpu_nb_cores_for_optimization':9},'state':'paused'},'max_ram':128000,'max_flash':1024000,'optimization_global_id':'87e766bebd850e63bd15766cd0f6010c','version':{'local_api':'2025.04.04.1','studio':'5.0.2'},'creation_date':'2025-06-18T10:15:26+00:00'},'class_names':'nominal,anomaly','results':[{'result_id':50,'combination':[0.74,0.52,0,0.41,0.71,0.1,0,[],0,0,3,1,0,0,3,2,1,1.82,0.0,0.0,1000000.0,2.25,0,0,20,0,0],'model':0,'performance':{'performance':{'score':0.9394,'precision':0.9592,'precision_confidence_interval':[0.9416,0.9768]},'memory_usage':{'estimated_ram':437,'estimated_flash':3864,'estimated_flash_knowledge':688}},'learning_min_lines':80,'knowledge_dat':'eNpjYPjjZDNruj0IMzA02Ad85XRIS0tz8HhYZX_46wv7ZbOP2BZnXLTrP2Rqf7LMzj7kMav9G4aVbiDcybLZVfScghsIP08odJWeI-kOwpP1FdxsX910BmEGhmlOO5h-uoAwg85eJwaGdjDee-y8Q6u2rTMIl5_RNtphVeEKwiA2w-ADjkDswMDwwAFCg0ADMLwWANkNQOwAxAdg8mSAemfSaJDdyDQtwQ1gfKkAMQcQazhB_Q_1c4M9-W7ApdcBajYUqJR4QhgLwHEAAAlIURQ='}],'data':{'nb_cols':1,'nb_lines':[[{'file_type':'nominal','nb_lines':252},{'file_type':'anomaly','nb_lines':253}]]},'only_emulators':false,'lock_type':100},'sign':60491,'license_key':'***'}",
+    "compile_emulators": true,
+    "compile_library": true,
+    "data": {
+        "nb_cols": 1,
+        "nb_lines": [
+            [
+                {
+                    "file_type": "nominal",
+                    "nb_lines": 252
+                },
+                {
+                    "file_type": "anomaly",
+                    "nb_lines": 253
+                }
+            ]
+        ]
+    },
+    "gcc_version": "arm-none-eabi-gcc (Arm GNU Toolchain 13.2.rel1 (Build arm-13.7)) 13.2.1 20231009",
+    "learning_min_lines": 80,
+    "lib_limited": false,
+    "library_id": "685296a45dc907eeffc24d2c",
+    "library_md5sum": "02affb1a1b67bd9d0e0f35e5a0e6a483",
+    "mcu": "cortex-m4_st_stm32l4_nucleo-l476rg",
+    "mcu_cpn": "NUCLEO-L476RG",
+    "mcu_display_name": "NUCLEO-L476RG - STMicroelectronics",
+    "mcu_family": "STM32L4 Series",
+    "mcu_group": "demo",
+    "mcu_type": "cortex-m4",
+    "mcu_vendor": "STMicroelectronics",
+    "memory_usage": {
+        "flash": 5172,
+        "ram": 588
+    },
+    "optimization_info": {
+        "creation_date": "2025-06-18T10:15:26+00:00",
+        "max_flash": 1024000,
+        "max_ram": 128000,
+        "optimization_global_id": "87e766bebd850e63bd15766cd0f6010c",
+        "progression": {
+            "cpu_info": {
+                "cpu_nb_cores": 12,
+                "cpu_nb_cores_for_optimization": 9
+            },
+            "elapsed_time": 569,
+            "evals_done": 34176,
+            "optimization_progress": 0.17088,
+            "state": "paused"
+        },
+        "version": {
+            "local_api": "2025.04.04.1",
+            "studio": "5.0.2"
+        }
+    },
+    "performance": {
+        "memory_usage": {
+            "estimated_flash": 3864,
+            "estimated_flash_knowledge": 688,
+            "estimated_ram": 437
+        },
+        "performance": {
+            "precision": 0.9592,
+            "precision_confidence_interval": [
+                0.9416,
+                0.9768
+            ],
+            "score": 0.9394
+        }
+    },
+    "request_type": "library",
+    "sensor": "multiGeneric",
+    "studio_info": {
+        "local_api": {
+            "platform": "win64",
+            "version": "2025.04.04.1"
+        },
+        "studio": "5.0.2",
+        "web_api": {
+            "env": "PROD",
+            "version": "v3"
+        }
+    },
+    "user_info": {
+        "company": "Dr.Ngp",
+        "email": "pavithrasubramaniyan15@gmail.com",
+        "first_name": "Pavithra",
+        "last_name": "Subramaniyan"
+    }
+}
