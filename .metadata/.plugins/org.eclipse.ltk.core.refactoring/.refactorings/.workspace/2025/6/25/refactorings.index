@@ -1,0 +1,7 @@
+1750137346387	Delete resource 'audio_datalogger/Core/Inc/mpu.h'
+1750141758894	Delete resource 'mpu_datalogger/Core/Src/main.c'
+1750225986492	Delete resource 'motion_anomaly_detection/Core/mpu.h'
+1750228172968	Delete resource 'motion_anomaly_detection/Core/Inc/NanoEdgeAI.h'
+1750229879116	Delete resource 'bh1750_light_int/Core/Src/bh1750.h'
+1750315212463	Delete resource 'light_anomaly_detection/Core/Inc/mpu.h'
+1750315432366	Delete resource 'gyro/Core/Inc/bh1750.h'

@@ -1,0 +1,157 @@
+12:34:17 **** Incremental Build of configuration Debug for project home_intrusion ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:43:1: error: unknown type name 'ADC_HandleTypeDef'; did you mean 'UART_HandleTypeDef'?
+   43 | ADC_HandleTypeDef hadc1;
+      | ^~~~~~~~~~~~~~~~~
+      | UART_HandleTypeDef
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:11: warning: implicit declaration of function 'HAL_ADC_Start'; did you mean 'HAL_DMA_Start'? [-Wimplicit-function-declaration]
+  104 |           HAL_ADC_Start(&hadc1);
+      |           ^~~~~~~~~~~~~
+      |           HAL_DMA_Start
+../Core/Src/main.c:105:11: warning: implicit declaration of function 'HAL_ADC_PollForConversion' [-Wimplicit-function-declaration]
+  105 |           HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:106:17: warning: implicit declaration of function 'HAL_ADC_GetValue' [-Wimplicit-function-declaration]
+  106 |           mic = HAL_ADC_GetValue(&hadc1);
+      |                 ^~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'MX_ADC1_Init':
+../Core/Src/main.c:179:3: error: unknown type name 'ADC_MultiModeTypeDef'
+  179 |   ADC_MultiModeTypeDef multimode = {0};
+      |   ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:180:3: error: unknown type name 'ADC_ChannelConfTypeDef'; did you mean 'DMA_Channel_TypeDef'?
+  180 |   ADC_ChannelConfTypeDef sConfig = {0};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   DMA_Channel_TypeDef
+../Core/Src/main.c:188:8: error: request for member 'Instance' in something not a structure or union
+  188 |   hadc1.Instance = ADC1;
+      |        ^
+../Core/Src/main.c:189:8: error: request for member 'Init' in something not a structure or union
+  189 |   hadc1.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
+      |        ^
+../Core/Src/main.c:189:31: error: 'ADC_CLOCK_ASYNC_DIV1' undeclared (first use in this function); did you mean 'ADC_CLOCK_ASYNC'?
+  189 |   hadc1.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
+      |                               ^~~~~~~~~~~~~~~~~~~~
+      |                               ADC_CLOCK_ASYNC
+../Core/Src/main.c:189:31: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:190:8: error: request for member 'Init' in something not a structure or union
+  190 |   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+      |        ^
+../Core/Src/main.c:190:27: error: 'ADC_RESOLUTION_12B' undeclared (first use in this function); did you mean 'ADC_RESOLUTION12b'?
+  190 |   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+      |                           ^~~~~~~~~~~~~~~~~~
+      |                           ADC_RESOLUTION12b
+../Core/Src/main.c:191:8: error: request for member 'Init' in something not a structure or union
+  191 |   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+      |        ^
+../Core/Src/main.c:191:26: error: 'ADC_DATAALIGN_RIGHT' undeclared (first use in this function)
+  191 |   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+      |                          ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:192:8: error: request for member 'Init' in something not a structure or union
+  192 |   hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
+      |        ^
+../Core/Src/main.c:192:29: error: 'ADC_SCAN_DISABLE' undeclared (first use in this function)
+  192 |   hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
+      |                             ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:193:8: error: request for member 'Init' in something not a structure or union
+  193 |   hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+      |        ^
+../Core/Src/main.c:193:29: error: 'ADC_EOC_SINGLE_CONV' undeclared (first use in this function); did you mean 'EOC_SINGLE_CONV'?
+  193 |   hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             EOC_SINGLE_CONV
+../Core/Src/main.c:194:8: error: request for member 'Init' in something not a structure or union
+  194 |   hadc1.Init.LowPowerAutoWait = DISABLE;
+      |        ^
+../Core/Src/main.c:195:8: error: request for member 'Init' in something not a structure or union
+  195 |   hadc1.Init.ContinuousConvMode = DISABLE;
+      |        ^
+../Core/Src/main.c:196:8: error: request for member 'Init' in something not a structure or union
+  196 |   hadc1.Init.NbrOfConversion = 1;
+      |        ^
+../Core/Src/main.c:197:8: error: request for member 'Init' in something not a structure or union
+  197 |   hadc1.Init.DiscontinuousConvMode = DISABLE;
+      |        ^
+../Core/Src/main.c:198:8: error: request for member 'Init' in something not a structure or union
+  198 |   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+      |        ^
+../Core/Src/main.c:198:33: error: 'ADC_SOFTWARE_START' undeclared (first use in this function)
+  198 |   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+      |                                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:199:8: error: request for member 'Init' in something not a structure or union
+  199 |   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+      |        ^
+../Core/Src/main.c:199:37: error: 'ADC_EXTERNALTRIGCONVEDGE_NONE' undeclared (first use in this function); did you mean 'ADC_EXTERNALTRIG_EDGE_NONE'?
+  199 |   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                     ADC_EXTERNALTRIG_EDGE_NONE
+../Core/Src/main.c:200:8: error: request for member 'Init' in something not a structure or union
+  200 |   hadc1.Init.DMAContinuousRequests = DISABLE;
+      |        ^
+../Core/Src/main.c:201:8: error: request for member 'Init' in something not a structure or union
+  201 |   hadc1.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+      |        ^
+../Core/Src/main.c:201:24: error: 'ADC_OVR_DATA_PRESERVED' undeclared (first use in this function); did you mean 'OVR_DATA_PRESERVED'?
+  201 |   hadc1.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+      |                        OVR_DATA_PRESERVED
+../Core/Src/main.c:202:8: error: request for member 'Init' in something not a structure or union
+  202 |   hadc1.Init.OversamplingMode = DISABLE;
+      |        ^
+../Core/Src/main.c:203:7: warning: implicit declaration of function 'HAL_ADC_Init'; did you mean 'HAL_DeInit'? [-Wimplicit-function-declaration]
+  203 |   if (HAL_ADC_Init(&hadc1) != HAL_OK)
+      |       ^~~~~~~~~~~~
+      |       HAL_DeInit
+../Core/Src/main.c:210:12: error: request for member 'Mode' in something not a structure or union
+  210 |   multimode.Mode = ADC_MODE_INDEPENDENT;
+      |            ^
+../Core/Src/main.c:210:20: error: 'ADC_MODE_INDEPENDENT' undeclared (first use in this function)
+  210 |   multimode.Mode = ADC_MODE_INDEPENDENT;
+      |                    ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:211:7: warning: implicit declaration of function 'HAL_ADCEx_MultiModeConfigChannel' [-Wimplicit-function-declaration]
+  211 |   if (HAL_ADCEx_MultiModeConfigChannel(&hadc1, &multimode) != HAL_OK)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:218:10: error: request for member 'Channel' in something not a structure or union
+  218 |   sConfig.Channel = ADC_CHANNEL_5;
+      |          ^
+../Core/Src/main.c:218:21: error: 'ADC_CHANNEL_5' undeclared (first use in this function); did you mean 'DAC2_CHANNEL_1'?
+  218 |   sConfig.Channel = ADC_CHANNEL_5;
+      |                     ^~~~~~~~~~~~~
+      |                     DAC2_CHANNEL_1
+../Core/Src/main.c:219:10: error: request for member 'Rank' in something not a structure or union
+  219 |   sConfig.Rank = ADC_REGULAR_RANK_1;
+      |          ^
+../Core/Src/main.c:219:18: error: 'ADC_REGULAR_RANK_1' undeclared (first use in this function)
+  219 |   sConfig.Rank = ADC_REGULAR_RANK_1;
+      |                  ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:220:10: error: request for member 'SamplingTime' in something not a structure or union
+  220 |   sConfig.SamplingTime = ADC_SAMPLETIME_2CYCLES_5;
+      |          ^
+../Core/Src/main.c:220:26: error: 'ADC_SAMPLETIME_2CYCLES_5' undeclared (first use in this function); did you mean 'ADC_SAMPLETIME_2CYCLE_5'?
+  220 |   sConfig.SamplingTime = ADC_SAMPLETIME_2CYCLES_5;
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                          ADC_SAMPLETIME_2CYCLE_5
+../Core/Src/main.c:221:10: error: request for member 'SingleDiff' in something not a structure or union
+  221 |   sConfig.SingleDiff = ADC_SINGLE_ENDED;
+      |          ^
+../Core/Src/main.c:221:24: error: 'ADC_SINGLE_ENDED' undeclared (first use in this function)
+  221 |   sConfig.SingleDiff = ADC_SINGLE_ENDED;
+      |                        ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:222:10: error: request for member 'OffsetNumber' in something not a structure or union
+  222 |   sConfig.OffsetNumber = ADC_OFFSET_NONE;
+      |          ^
+../Core/Src/main.c:222:26: error: 'ADC_OFFSET_NONE' undeclared (first use in this function)
+  222 |   sConfig.OffsetNumber = ADC_OFFSET_NONE;
+      |                          ^~~~~~~~~~~~~~~
+../Core/Src/main.c:223:10: error: request for member 'Offset' in something not a structure or union
+  223 |   sConfig.Offset = 0;
+      |          ^
+../Core/Src/main.c:224:7: warning: implicit declaration of function 'HAL_ADC_ConfigChannel' [-Wimplicit-function-declaration]
+  224 |   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+      |       ^~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+12:34:19 Build Failed. 40 errors, 6 warnings. (took 2s.253ms)
+

@@ -1,0 +1,4 @@
+../Core/Src/HTU21D.c:4:6:HTU21D_Init	1
+../Core/Src/HTU21D.c:10:6:HTU21D_Reset	1
+../Core/Src/HTU21D.c:17:7:HTU21D_ReadTemperature	1
+../Core/Src/HTU21D.c:33:7:HTU21D_ReadHumidity	1

@@ -1,0 +1,10 @@
+10:37:07 **** Incremental Build of configuration Debug for project interface_mic_sensor ****
+make -j12 all 
+arm-none-eabi-size  interface_mic_sensor.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32744	    468	   2148	  35360	   8a20	interface_mic_sensor.elf
+Finished building: default.size.stdout
+ 
+
+10:37:08 Build Finished. 0 errors, 0 warnings. (took 527ms)
+

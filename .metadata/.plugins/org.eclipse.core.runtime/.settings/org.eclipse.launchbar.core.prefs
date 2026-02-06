@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:L476RG Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:buttons Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:home_intrusion Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:interface_mic_sensor Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:user_reset_button Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:voice_command Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:f_motion_interface Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:motion_anomaly_detection Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:bh1750_light_int Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:light_anomaly_detection Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:audio_datalogger,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:gyro Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:temp_sensor_int Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:mpu_datalogger
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:L476RG\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:L476RG\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:f_motion_interface\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:gyro\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:light_anomaly_detection\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:mpu_datalogger/activeLaunchMode=run

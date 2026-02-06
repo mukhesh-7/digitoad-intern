@@ -1,0 +1,10 @@
+15:43:01 **** Incremental Build of configuration Debug for project audio_datalogger ****
+make -j12 all 
+arm-none-eabi-size  audio_datalogger.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33128	    468	   3172	  36768	   8fa0	audio_datalogger.elf
+Finished building: default.size.stdout
+ 
+
+15:43:01 Build Finished. 0 errors, 0 warnings. (took 613ms)
+

@@ -1,0 +1,9 @@
+../Core/Inc/bh1750.h:20:6:BH1750_Init	1
+../Core/Inc/bh1750.h:31:7:BH1750_ReadLux	1
+../Core/Src/main.c:71:5:main	1
+../Core/Src/main.c:120:6:SystemClock_Config	4
+../Core/Src/main.c:170:13:MX_I2C1_Init	4
+../Core/Src/main.c:218:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:253:13:MX_GPIO_Init	1
+../Core/Src/main.c:288:5:__io_putchar	1
+../Core/Src/main.c:298:6:Error_Handler	1

@@ -1,0 +1,10 @@
+12:43:03 **** Incremental Build of configuration Debug for project motion_anomaly_detection ****
+make -j12 all 
+arm-none-eabi-size  motion_anomaly_detection.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33632	   1148	   6564	  41344	   a180	motion_anomaly_detection.elf
+Finished building: default.size.stdout
+ 
+
+12:43:03 Build Finished. 0 errors, 0 warnings. (took 359ms)
+
